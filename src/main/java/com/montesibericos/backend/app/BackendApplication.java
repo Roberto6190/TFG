@@ -1,4 +1,4 @@
-package com.montesibericos.backend;
+package com.montesibericos.backend.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
