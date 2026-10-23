@@ -11,7 +11,7 @@ import java.util.List;
 public interface ArmaRepositorio extends JpaRepository<Arma, Long> {
 
     // Todas las armas de un usuario
-    List<Arma> findByUsuario(Usuario usuario);
+    List<Arma> findByUsuario_IdUsuario(Long usuario);
 
     // Buscar arma por número de serie
     boolean existsByNumeroSerie(String numeroSerie);

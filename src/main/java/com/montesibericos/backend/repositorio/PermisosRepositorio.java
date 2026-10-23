@@ -11,7 +11,7 @@ import java.util.List;
 public interface PermisosRepositorio extends JpaRepository<Permisos, Long> {
 
     // Todos los permisos de un usuario
-    List<Permisos> findByUsuario(Usuario usuario);
+    List<Permisos> findByUsuario_IdUsuario(Long idUsuario);
 
     // Permisos que caducan antes de una fecha
     // Spring Boot lo usa para mandar notificaciones
