@@ -10,7 +10,7 @@ import java.util.List;
 public interface ReservaRepositorio extends JpaRepository<Reserva, Long> {
 
     // Todas las reservas de un usuario
-    List<Reserva> findByUsuario(Usuario usuario);
+    List<Reserva> findByUsuario_IdUsuario(Long usuario);
 
     // Reservas por estado (Pendiente, Confirmada, Cancelada)
     List<Reserva> findByEstado(String estado);

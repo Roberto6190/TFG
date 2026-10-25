@@ -14,4 +14,6 @@ public interface PiezaCobradaRepositorio extends JpaRepository<PiezaCobrada, Lon
 
     // Buscar piezas por especie
     List<PiezaCobrada> findByEspecie(String especie);
+
+    List<PiezaCobrada> findByJornada_IdJornada(Long idJornada);
 }

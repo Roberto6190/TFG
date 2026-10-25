@@ -9,8 +9,7 @@ import java.util.List;
 @Repository
 public interface JornadaRepositorio extends JpaRepository<Jornada, Long> {
 
-    // Todas las jornadas de un usuario
-    List<Jornada> findByUsuario(Usuario usuario);
+    List<Jornada> findByUsuario_IdUsuario(Long usuarioIdUsuario);
 
     // Jornadas pendientes de sincronizar (modo offline)
     List<Jornada> findByUsuarioAndSincronizada(Usuario usuario, Integer sincronizada);

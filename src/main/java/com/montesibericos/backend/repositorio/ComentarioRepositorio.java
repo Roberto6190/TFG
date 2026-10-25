@@ -10,5 +10,7 @@ import java.util.List;
 public interface ComentarioRepositorio extends JpaRepository<Comentario, Long> {
 
     // Todos los comentarios de una publicación
-    List<Comentario> findByPublicacion(Publicacion publicacion);
+    List<Comentario> findByPublicacion_IdPublicacion(Long publicacion);
+
+    List<Comentario> findByUsuario_IdUsuario(Long idUsuario);
 }

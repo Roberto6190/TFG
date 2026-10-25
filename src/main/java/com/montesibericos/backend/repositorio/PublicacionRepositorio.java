@@ -10,7 +10,7 @@ import java.util.List;
 public interface PublicacionRepositorio extends JpaRepository<Publicacion, Long> {
 
     // Todas las publicaciones de un usuario
-    List<Publicacion> findByUsuario(Usuario usuario);
+    List<Publicacion> findByUsuario_IdUsuario(Long usuario);
 
     // Feed ordenado por fecha descendente (más recientes primero)
     List<Publicacion> findAllByOrderByFechaPublicacionDesc();
